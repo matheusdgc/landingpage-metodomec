@@ -1,4 +1,4 @@
-import { Sparkles, Brain, HeartHandshake, Flower2 } from 'lucide-react'
+import { Sparkles, Brain, Venus, HeartHandshake, Flower2 } from 'lucide-react'
 
 const Solution = () => {
   const benefits = [
