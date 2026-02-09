@@ -50,7 +50,7 @@ const Method = () => {
             <span className="gradient-text">Método MEC</span>
           </h2>
           <p className="text-lg text-taupe-600 max-w-3xl mx-auto font-body">
-            Uma jornada estruturada em 12 semanas para você se reconectar com sua 
+            Uma jornada estruturada em 12 encontros ao vivo para você aprender a se reconectar com sua 
             essência e transformar sua vida de dentro para fora.
           </p>
         </div>
