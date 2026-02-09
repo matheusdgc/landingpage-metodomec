@@ -1,4 +1,4 @@
-import { Sparkles, Brain, Venus, HeartHandshake, Flower2 } from 'lucide-react'
+import { Sparkles, Brain, Heart, HeartHandshake, Flower2 } from 'lucide-react'
 
 const Solution = () => {
   const benefits = [
@@ -8,7 +8,7 @@ const Solution = () => {
       description: "Liberte-se dos padrões de pensamento que te aprisionam"
     },
         {
-      icon: <Venus className="w-6 h-6" />,
+      icon: <Heart className="w-6 h-6" />,
       title: "Cuidar do corpo",
       description: "Escolhas diárias que sustentam saúde: movimento, alimentação simples, sono e respeito aos limites."
     },
