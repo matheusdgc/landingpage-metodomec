@@ -35,9 +35,9 @@ const Method = () => {
   ]
 
   const modules = [
-    { week: "1-4", title: "Mente", description: "Identificação e libertação de crenças limitantes, padrões tóxicos e bloqueios emocionais." },
-    { week: "5-8", title: "Espírito", description: "Reconexão com sua essência, propósito e espiritualidade de forma prática e acolhedora." },
-    { week: "9-12", title: "Corpo", description: "Integração mente-corpo, autocuidado, saúde hormonal e vitalidade feminina." }
+    { title: "Mente", description: "Identificação e libertação de crenças limitantes, padrões tóxicos e bloqueios emocionais." },
+    { title: "Espírito", description: "Reconexão com sua essência, propósito e espiritualidade de forma prática e acolhedora." },
+    { title: "Corpo", description: "Integração mente e corpo, autocuidado, como gerar mais saúde no corpo e vitalidade feminina." }
   ]
 
   return (
@@ -60,11 +60,6 @@ const Method = () => {
           {modules.map((module, index) => (
             <div key={index} className="relative group">
               <div className="bg-gradient-to-br from-sand-100 to-sand-50 rounded-3xl p-8 border border-rose-100 h-full hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center space-x-3 mb-4">
-                  <span className="text-sm font-medium text-gold-600 bg-gold-50 px-3 py-1 rounded-full">
-                    Semanas {module.week}
-                  </span>
-                </div>
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-400 to-rose-500 text-sand-50 flex items-center justify-center font-serif text-3xl font-bold mb-4">
                   {module.title.charAt(0)}
                 </div>

@@ -4,7 +4,7 @@ const About = () => {
   const credentials = [
     { icon: <Stethoscope className="w-5 h-5" />, text: "Médica CRM 119.572" },
     { icon: <Award className="w-5 h-5" />, text: "Abordagem Integrativa" },
-    { icon: <BookOpen className="w-5 h-5" />, text: "+15 Anos de Experiência" },
+    { icon: <BookOpen className="w-5 h-5" />, text: "+20 Anos de Experiência" },
     { icon: <Heart className="w-5 h-5" />, text: "+500 Mulheres Transformadas" },
   ]
 
@@ -55,15 +55,13 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-taupe-600 mb-6 leading-relaxed font-body">
-              Médica com abordagem integrativa, apaixonada por transformar a vida de mulheres através de 
-              uma abordagem holística e acolhedora. Há mais de 15 anos dedico minha vida 
-              a ajudar mulheres a se reconectarem com sua essência.
+              Sou médica há 21 anos e, ao longo dessa jornada, compreendi que a saúde verdadeira nasce muito além dos sintomas: ela começa na escuta profunda do corpo, da mente e da alma.
+              Depois de um intenso processo de transformação pessoal, escolhi dedicar meu trabalho a apoiar mulheres a retomarem uma vida mais plena, reconectadas com quem realmente são.
             </p>
 
             <p className="text-lg text-taupe-600 mb-8 leading-relaxed font-body">
-              Criei o Método MEC após perceber que muitas das minhas pacientes sofriam 
-              não apenas de questões físicas, mas de uma profunda desconexão consigo mesmas. 
-              O individualismo e a correria do dia a dia as afastaram de quem realmente são.
+              O Método MEC surgiu ao perceber que muitas mulheres adoecem quando se afastam da própria essência. 
+              Meu propósito é conduzi-las de volta a si mesmas, resgatando a essência feminina como caminho para uma vida mais consciente, equilibrada e saudável.
             </p>
 
             {/* Credentials */}

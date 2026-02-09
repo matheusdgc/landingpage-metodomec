@@ -7,7 +7,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Para quem é o Método MEC?",
-      answer: "O Método MEC é para toda mulher entre 22 e 60 anos que sente que perdeu a conexão consigo mesma. Seja você casada ou solteira, se você se identifica com a sensação de estar sempre cuidando de todos menos de si mesma, ou se sente que o individualismo e a correria do dia a dia te afastaram da sua essência feminina, este método foi feito para você."
+      answer: "O Método MEC é para toda mulher que sente que perdeu a conexão consigo mesma. Seja você casada ou solteira, se você se identifica com a sensação de estar sempre cuidando de todos menos de si mesma, ou se sente que o individualismo e a correria do dia a dia te afastaram da sua essência feminina, este método foi feito para você."
     },
     {
       question: "Preciso ter conhecimento prévio sobre abordagem integrativa?",
