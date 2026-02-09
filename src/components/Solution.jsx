@@ -7,6 +7,11 @@ const Solution = () => {
       title: "Clareza Mental",
       description: "Liberte-se dos padrões de pensamento que te aprisionam"
     },
+        {
+      icon: <Venus className="w-6 h-6" />,
+      title: "Cuidar do corpo",
+      description: "Escolhas diárias que sustentam saúde: movimento, alimentação simples, sono e respeito aos limites."
+    },
     {
       icon: <Sparkles className="w-6 h-6" />,
       title: "Conexão Espiritual",
