@@ -149,6 +149,10 @@ const Investment = () => {
             "Você não está gastando, está investindo no bem mais precioso que existe: você mesma. 
             Quando você se transforma, tudo ao seu redor também se transforma."
           </p>
+          
+          <p className="text-2xl md:text-3xl font-display font-bold gradient-text mt-6">
+            Seja poderosa de verdade.
+          </p>
         </div>
       </div>
     </section>

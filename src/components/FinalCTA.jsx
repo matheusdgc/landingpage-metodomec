@@ -52,6 +52,11 @@ const FinalCTA = () => {
             <p className="text-rose-200 mt-2 font-body">ou 12x de R$57</p>
           </div>
 
+          {/* Tagline */}
+          <p className="text-2xl md:text-3xl font-display font-bold text-gold-300 mb-10">
+            Seja poderosa de verdade.
+          </p>
+
           {/* CTA Button */}
           <div className="flex flex-col items-center">
             <button

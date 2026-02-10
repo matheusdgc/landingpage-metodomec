@@ -70,6 +70,9 @@ const Problem = () => {
               "Você acorda todos os dias dando conta de tudo, sendo forte para todos... 
               mas quando foi a última vez que você se permitiu ser cuidada?"
             </p>
+            <p className="text-xl md:text-2xl font-display font-bold text-gold-300 mb-3">
+              Seja poderosa de verdade.
+            </p>
             <p className="text-rose-200 font-medium font-body">
               Chegou a hora de mudar essa história.
             </p>
