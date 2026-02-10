@@ -25,7 +25,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-taupe-600 mb-4 leading-relaxed font-body">
-              <strong className="text-brown-600">Método MEC</strong> — Mente, Espírito, Corpo
+              <strong className="text-brown-600">Método MEC</strong> — Mente, Espírito, e Corpo
             </p>
 
             <p className="text-base sm:text-lg text-taupe-500 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-body">

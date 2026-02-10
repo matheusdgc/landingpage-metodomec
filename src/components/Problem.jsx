@@ -1,21 +1,21 @@
-import { AlertCircle, Heart, Users, Frown } from 'lucide-react'
+import { AlertCircle, Heart, Users, Frown, HeartCrack, Weight } from 'lucide-react'
 
 const Problem = () => {
   const problems = [
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Individualismo Excessivo",
-      description: "Você se vê presa em um mundo onde cada uma cuida apenas de si, sem espaço para vulnerabilidade ou conexão verdadeira."
+      icon: <Weight className="w-8 h-8" />,
+      title: "A Mulher que Carrega Tudo",
+      description: "Assume tudo sozinha, vive sobrecarregada, autocobrança constante e não se permite descansar."
     },
     {
       icon: <Frown className="w-8 h-8" />,
-      title: "Indiferença nos Relacionamentos",
-      description: "Sente que as relações ao seu redor se tornaram superficiais, distantes, e que falta aquele cuidado genuíno."
+      title: "A Mulher que Se Deixou para Depois",
+      description: "Não consegue manter autocuidado, alimentação e constância."
     },
     {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Desconexão com o Feminino",
-      description: "Perdeu contato com sua essência feminina, sua capacidade de se permitir ser cuidada e acolhida."
+      icon: <HeartCrack className="w-8 h-8" />,
+      title: "A Mulher Desgastada nos Relacionamentos",
+      description: "Dificuldade na comunicação e desgaste no relacionamento conjugal e com os filhos."
     }
   ]
 
