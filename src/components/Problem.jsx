@@ -10,7 +10,7 @@ const Problem = () => {
     {
       icon: <Frown className="w-8 h-8" />,
       title: "A Mulher que Se Deixou para Depois",
-      description: "Não consegue manter autocuidado, alimentação e constância."
+      description: "Não consegue manter o autocuidado, muitas vezes até sabe o que precisa fazer, mas não consegue manter constância."
     },
     {
       icon: <HeartCrack className="w-8 h-8" />,
