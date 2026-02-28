@@ -7,6 +7,9 @@ import About from './components/About'
 import Investment from './components/Investment'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/WhatsAppButton'
+import ExitIntentPopup from './components/ExitIntentPopup'
+import { openCheckout } from './config'
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <FAQ />
       </main>
       <Footer />
+
+      <WhatsAppButton />
+      <ExitIntentPopup onCheckout={openCheckout} />
     </div>
   )
 }

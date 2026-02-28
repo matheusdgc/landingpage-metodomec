@@ -56,7 +56,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-rose-400 hover:bg-rose-700 text-sand-50 flex items-center justify-center w-full h-full text-lg font-semibold antialiased transition-colors",
+          "relative bg-rose-600 hover:bg-rose-700 text-sand-50 flex items-center justify-center w-full h-full text-lg font-semibold antialiased transition-colors",
           className
         )}
         style={{

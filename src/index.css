@@ -69,6 +69,19 @@ h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* Respeita preferência do sistema por menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-pulse-soft {
+    animation: none !important;
+  }
+
+  /* Desativa transições de transform em elementos decorativos */
+  .blur-3xl {
+    transition: none !important;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

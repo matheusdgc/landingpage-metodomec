@@ -1,17 +1,38 @@
-import { Heart, Sparkles } from 'lucide-react'
+import { useState } from 'react'
+import { Heart, Sparkles, ChevronDown } from 'lucide-react'
 import { Button as MovingBorderButton } from '@/components/ui/moving-border'
+
+const ProfileImage = ({ src, alt, className }) => {
+  const [hasError, setHasError] = useState(false)
+
+  if (hasError) {
+    return (
+      <div className={`${className} bg-rose-100 flex items-center justify-center`}>
+        <span className="font-display text-6xl font-bold text-rose-300">AP</span>
+      </div>
+    )
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      decoding="async"
+      onError={() => setHasError(true)}
+    />
+  )
+}
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-sand-50 via-sand-100 to-rose-50">
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-rose-200 rounded-full opacity-20 blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-200 rounded-full opacity-20 blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sand-200 rounded-full opacity-10 blur-3xl"></div>
+      <div className="hidden md:block absolute top-20 left-10 w-72 h-72 bg-rose-200 rounded-full opacity-20 blur-3xl animate-float"></div>
+      <div className="hidden md:block absolute bottom-20 right-10 w-96 h-96 bg-gold-200 rounded-full opacity-20 blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sand-200 rounded-full opacity-10 blur-3xl"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-16 sm:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center space-x-2 bg-sand-50/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md mb-6">
               <Sparkles className="w-4 h-4 text-gold-400" />
@@ -29,8 +50,8 @@ const Hero = () => {
             </p>
 
             <p className="text-base sm:text-lg text-taupe-500 mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0 font-body">
-              Transforme sua vida através de uma jornada de autoconhecimento e reconexão 
-              com sua essência feminina. Permita-se ser cuidada, acolhida e guiada pela 
+              Transforme sua vida através de uma jornada de autoconhecimento e reconexão
+              com sua essência feminina. Permita-se ser cuidada, acolhida e guiada pela
               Dra. Andreia Polo Luquete.
             </p>
 
@@ -57,7 +78,6 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* Trust Badges */}
             <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-taupe-500 font-body">
               <div className="flex items-center space-x-2">
                 <svg className="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
@@ -80,24 +100,20 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image/Visual */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Decorative circles */}
               <div className="absolute -top-4 -left-4 w-full h-full rounded-3xl border-2 border-rose-200 transform rotate-3"></div>
               <div className="absolute -bottom-4 -right-4 w-full h-full rounded-3xl border-2 border-gold-200 transform -rotate-3"></div>
-              
-              {/* Main image container */}
-              <div className="relative w-80 h-96 sm:w-96 sm:h-[480px] rounded-3xl overflow-hidden elegant-shadow">
-                <img 
-                  src="/images/profile1.jpeg" 
-                  alt="Dra. Andreia Polo Luquete" 
+
+              <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[480px] rounded-3xl overflow-hidden elegant-shadow">
+                <ProfileImage
+                  src="/images/profile1.jpeg"
+                  alt="Dra. Andreia Polo Luquete"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
 
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 bg-sand-50 rounded-2xl shadow-xl p-4 animate-float">
+              <div className="hidden sm:block absolute -bottom-6 -left-6 bg-sand-50 rounded-2xl shadow-xl p-4 animate-float">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center">
                     <Heart className="w-6 h-6 text-rose-400" />
@@ -112,6 +128,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <a
+        href="#metodo"
+        aria-label="Ver o método"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-1 text-taupe-400 hover:text-taupe-600 transition-colors animate-bounce"
+      >
+        <span className="text-xs font-body tracking-wide">Role para baixo</span>
+        <ChevronDown className="w-5 h-5" />
+      </a>
     </section>
   )
 }

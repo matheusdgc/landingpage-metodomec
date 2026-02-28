@@ -1,8 +1,14 @@
-import { Award, BookOpen, Heart, Stethoscope } from 'lucide-react'
+import { Award, BookOpen, Heart, Stethoscope, Instagram, ExternalLink } from 'lucide-react'
+import { INSTAGRAM_URL, CRM_VERIFICATION_URL } from '../config'
 
 const About = () => {
   const credentials = [
-    { icon: <Stethoscope className="w-5 h-5" />, text: "Médica CRM 119.572" },
+    {
+      icon: <Stethoscope className="w-5 h-5" />,
+      text: "Médica CRM 119.572",
+      href: CRM_VERIFICATION_URL,
+      title: "Verificar registro no CFM",
+    },
     { icon: <Award className="w-5 h-5" />, text: "Abordagem Integrativa" },
     { icon: <BookOpen className="w-5 h-5" />, text: "+20 Anos de Experiência" },
     { icon: <Heart className="w-5 h-5" />, text: "+500 Mulheres Transformadas" },
@@ -12,23 +18,20 @@ const About = () => {
     <section id="sobre" className="py-20 lg:py-28 bg-gradient-to-b from-sand-50 to-sand-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image */}
           <div className="relative order-2 lg:order-1">
             <div className="relative">
-              {/* Main Image Container */}
               <div className="relative w-full max-w-md mx-auto">
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-3xl bg-gradient-to-br from-rose-200 to-rose-300 transform rotate-3"></div>
                 <div className="relative rounded-3xl overflow-hidden elegant-shadow aspect-[4/5]">
-                  <img 
-                    src="/images/profile2.jpeg" 
-                    alt="Dra. Andreia Polo Luquete" 
+                  <img
+                    src="/images/profile2.jpeg"
+                    alt="Dra. Andreia Polo Luquete"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>
 
-              {/* Floating Card */}
-              <div className="absolute -bottom-6 -right-6 lg:right-0 bg-sand-50 rounded-2xl shadow-xl p-5 max-w-xs animate-float">
+              <div className="hidden sm:block absolute -bottom-6 -right-6 lg:right-0 bg-sand-50 rounded-2xl shadow-xl p-5 max-w-xs animate-float">
                 <div className="flex items-center space-x-3">
                   <div className="w-14 h-14 rounded-full bg-rose-100 flex items-center justify-center">
                     <Award className="w-7 h-7 text-rose-500" />
@@ -42,47 +45,82 @@ const About = () => {
             </div>
           </div>
 
-          {/* Content */}
           <div className="order-1 lg:order-2">
             <div className="inline-flex items-center space-x-2 bg-rose-50 px-4 py-2 rounded-full mb-6">
               <Heart className="w-4 h-4 text-rose-500" />
               <span className="text-sm font-medium text-rose-600">Sua Mentora</span>
             </div>
-            
+
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-700 mb-6">
               Dra. Andreia{' '}
               <span className="gradient-text">Polo Luquete</span>
             </h2>
-            
+
             <p className="text-lg text-taupe-600 mb-6 leading-relaxed font-body">
               Sou médica há 21 anos e, ao longo dessa jornada, compreendi que a saúde verdadeira nasce muito além dos sintomas: ela começa na escuta profunda do corpo, da mente e da alma.
               Depois de um intenso processo de transformação pessoal, escolhi dedicar meu trabalho a apoiar mulheres a retomarem uma vida mais plena, reconectadas com quem realmente são.
             </p>
 
             <p className="text-lg text-taupe-600 mb-8 leading-relaxed font-body">
-              O Método MEC surgiu ao perceber que muitas mulheres adoecem quando se afastam da própria essência. 
+              O Método MEC surgiu ao perceber que muitas mulheres adoecem quando se afastam da própria essência.
               Meu propósito é conduzi-las de volta a si mesmas, resgatando a essência feminina como caminho para uma vida mais consciente, equilibrada e saudável.
             </p>
 
-            {/* Credentials */}
             <div className="grid grid-cols-2 gap-4 mb-8">
-              {credentials.map((credential, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center space-x-3 bg-sand-50 rounded-xl p-4 shadow-sm"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-rose-100 text-rose-500 flex items-center justify-center">
-                    {credential.icon}
+              {credentials.map((credential, index) => {
+                const inner = (
+                  <>
+                    <div className="w-10 h-10 rounded-lg bg-rose-100 text-rose-500 flex items-center justify-center flex-shrink-0">
+                      {credential.icon}
+                    </div>
+                    <span className="text-sm font-medium text-brown-600">{credential.text}</span>
+                    {credential.href && (
+                      <ExternalLink className="w-3.5 h-3.5 text-taupe-400 ml-auto flex-shrink-0" />
+                    )}
+                  </>
+                )
+
+                return credential.href ? (
+                  <a
+                    key={index}
+                    href={credential.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={credential.title}
+                    className="flex items-center space-x-3 bg-sand-50 rounded-xl p-4 shadow-sm hover:shadow-md hover:bg-rose-50 transition-all group"
+                  >
+                    {inner}
+                  </a>
+                ) : (
+                  <div key={index} className="flex items-center space-x-3 bg-sand-50 rounded-xl p-4 shadow-sm">
+                    {inner}
                   </div>
-                  <span className="text-sm font-medium text-brown-600">{credential.text}</span>
-                </div>
-              ))}
+                )
+              })}
             </div>
 
-            <blockquote className="border-l-4 border-gold-400 pl-6 py-2 italic text-taupe-600 font-body">
-              "Minha missão é guiar mulheres em uma jornada de reconexão, para que possam 
+            <blockquote className="border-l-4 border-gold-400 pl-6 py-2 italic text-taupe-600 font-body mb-8">
+              "Minha missão é guiar mulheres em uma jornada de reconexão, para que possam
               florescer e viver a vida plena que merecem."
             </blockquote>
+
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 bg-gradient-to-r from-rose-50 to-gold-50 border border-rose-200 hover:border-rose-300 hover:from-rose-100 hover:to-gold-100 rounded-2xl px-5 py-4 transition-all group"
+            >
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-400 to-rose-500 flex items-center justify-center flex-shrink-0">
+                <Instagram className="w-5 h-5 text-sand-50" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-brown-600 group-hover:text-brown-700">
+                  Siga no Instagram
+                </p>
+                <p className="text-sm text-taupe-500 font-body">@dra.andreialuquete</p>
+              </div>
+              <ExternalLink className="w-4 h-4 text-taupe-400 ml-auto group-hover:text-rose-400 transition-colors" />
+            </a>
           </div>
         </div>
       </div>

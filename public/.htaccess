@@ -1,0 +1,55 @@
+# HostGator / Apache — Método MEC
+Options -MultiViews -Indexes
+
+# SPA fallback: redireciona tudo para index.html
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# ──────────────────────────────────────────────
+# Compressão Gzip
+# ──────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ──────────────────────────────────────────────
+# Cache de assets (JS/CSS/imagens com hash)
+# ──────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Assets com hash no nome — cache longo
+  <FilesMatch "\.(js|css|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|ico|webp)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  # HTML — sem cache (sempre atualizado)
+  <FilesMatch "\.html$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# ──────────────────────────────────────────────
+# Segurança básica
+# ──────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# MIME types corretos
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType text/css .css
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+  AddType image/webp .webp
+</IfModule>

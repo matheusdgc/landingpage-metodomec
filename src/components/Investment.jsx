@@ -1,11 +1,10 @@
 import { Heart, Shield, Clock, Gift, CheckCircle, Users, Sparkles, Star } from 'lucide-react'
 import { Button as MovingBorderButton } from '@/components/ui/moving-border'
+import CountdownTimer from './CountdownTimer'
+import { openCheckout } from '../config'
 
 const Investment = () => {
-  const handleCheckout = () => {
-    // Integração com Cakto - substituir pela URL real do checkout
-    window.open('https://pay.cakto.com.br/XXXXXXX', '_blank')
-  }
+  const handleCheckout = openCheckout
 
   const includes = [
     "12 encontros ao vivo com a Dra. Andreia",
@@ -19,39 +18,34 @@ const Investment = () => {
   return (
     <section id="investimento" className="py-20 lg:py-28 bg-gradient-to-b from-sand-50 to-rose-50/30">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-700 mb-6">
             Invista em{' '}
             <span className="gradient-text">Você Mesma</span>
           </h2>
-          
+
           <p className="text-lg text-taupe-600 max-w-2xl mx-auto font-body leading-relaxed">
-            Uma jornada de 12 semanas que vale mais do que qualquer presente material. 
+            Uma jornada de 12 semanas que vale mais do que qualquer presente material.
             É o cuidado que você merece dar a si mesma.
           </p>
         </div>
 
-        {/* Urgency Banner */}
-        <div className="bg-gradient-to-r from-rose-400 to-rose-500 rounded-2xl p-4 mb-8 max-w-2xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 text-sand-50">
+        <div className="bg-gradient-to-r from-rose-400 to-rose-500 rounded-2xl p-5 mb-8 max-w-2xl mx-auto text-center">
+          <div className="flex items-center justify-center space-x-2 text-sand-50 mb-4">
             <Sparkles className="w-5 h-5" />
             <span className="font-body font-medium">Vagas limitadas para a próxima turma</span>
             <Sparkles className="w-5 h-5" />
           </div>
+          <CountdownTimer />
         </div>
 
-        {/* Investment Card */}
         <div className="bg-sand-50 rounded-3xl shadow-xl overflow-hidden max-w-2xl mx-auto">
-          {/* Header */}
           <div className="bg-gradient-to-r from-rose-300 to-rose-400 p-6 text-center">
             <p className="text-sand-50 font-medium mb-1">Método MEC</p>
             <p className="text-sand-100 text-sm font-body">12 Encontros ao Vivo</p>
           </div>
 
-          {/* Body */}
           <div className="p-8 lg:p-10">
-            {/* Social Proof */}
             <div className="flex items-center justify-center space-x-2 mb-6">
               <div className="flex -space-x-2">
                 <div className="w-8 h-8 rounded-full bg-rose-200 border-2 border-sand-50 flex items-center justify-center text-xs text-rose-600 font-semibold">A</div>
@@ -66,7 +60,6 @@ const Investment = () => {
               <span className="text-sm text-taupe-500 font-body">+500 mulheres transformadas</span>
             </div>
 
-            {/* Price */}
             <div className="text-center mb-8">
               <p className="text-taupe-500 text-sm mb-2 font-body">Investimento especial:</p>
               <div className="flex items-center justify-center space-x-3 mb-2">
@@ -74,13 +67,12 @@ const Investment = () => {
                 <span className="bg-rose-100 text-rose-600 px-2 py-1 rounded-full text-xs font-semibold">-75% OFF</span>
               </div>
               <div className="flex items-baseline justify-center space-x-2">
-                <span className="text-taupe-500 text-lg">por apenas</span>
-                <span className="font-display text-5xl lg:text-6xl font-bold text-brown-600">R$497</span>
+                <span className="text-taupe-500 text-base sm:text-lg">por apenas</span>
+                <span className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-600">R$497</span>
               </div>
-              <p className="text-taupe-500 mt-2 font-body">ou <strong className="text-brown-600">12x de R$57</strong></p>
+              <p className="text-taupe-500 mt-2 font-body">ou <strong className="text-brown-600">12x de R$57,78</strong></p>
             </div>
 
-            {/* Comparison */}
             <div className="bg-gold-50 rounded-xl p-4 mb-8 text-center">
               <p className="text-sm text-taupe-600 font-body">
                 Menos do que uma consulta médica comum
@@ -89,7 +81,6 @@ const Investment = () => {
               </p>
             </div>
 
-            {/* What's Included */}
             <div className="mb-8">
               <p className="font-semibold text-brown-600 mb-4 text-center">O que está incluso:</p>
               <ul className="space-y-3">
@@ -102,7 +93,6 @@ const Investment = () => {
               </ul>
             </div>
 
-            {/* CTA Button */}
             <MovingBorderButton
               onClick={handleCheckout}
               containerClassName="w-full"
@@ -113,7 +103,6 @@ const Investment = () => {
               <span>Quero Começar Minha Transformação</span>
             </MovingBorderButton>
 
-            {/* Trust Elements */}
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-taupe-500">
               <div className="flex items-center space-x-2">
                 <Shield className="w-4 h-4 text-gold-500" />
@@ -129,7 +118,6 @@ const Investment = () => {
               </div>
             </div>
 
-            {/* Risk Reversal */}
             <div className="mt-8 p-4 border border-rose-200 rounded-xl bg-rose-50/50">
               <p className="text-center text-sm text-taupe-600 font-body">
                 <strong className="text-brown-600">Garantia incondicional de 7 dias:</strong> Se você não sentir que o Método MEC é para você, devolvemos 100% do seu investimento. Sem perguntas.
@@ -138,19 +126,18 @@ const Investment = () => {
           </div>
         </div>
 
-        {/* Scarcity + Self-Investment Message */}
         <div className="mt-12 text-center max-w-2xl mx-auto space-y-6">
           <div className="flex items-center justify-center space-x-2 text-rose-500">
             <Users className="w-5 h-5" />
             <span className="font-body font-medium">Turmas reduzidas para maior acompanhamento</span>
           </div>
-          
+
           <p className="text-taupe-500 italic font-body leading-relaxed">
-            "Você não está gastando, está investindo no bem mais precioso que existe: você mesma. 
+            "Você não está gastando, está investindo no bem mais precioso que existe: você mesma.
             Quando você se transforma, tudo ao seu redor também se transforma."
           </p>
-          
-          <p className="text-2xl md:text-3xl font-display font-bold gradient-text mt-6">
+
+          <p className="text-xl sm:text-2xl md:text-3xl font-display font-bold gradient-text mt-6">
             Seja poderosa de verdade.
           </p>
         </div>
