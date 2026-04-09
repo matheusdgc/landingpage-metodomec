@@ -34,7 +34,7 @@ const Testimonials = () => {
       name: "Fernanda A.",
       age: 38,
       role: "Professora",
-      content: "Os 12 encontros foram como um abraço semanal na minha alma. Cada módulo trouxe revelações importantes. Hoje entendo meu corpo, minha mente e meu espírito de uma forma que nunca imaginei ser possível.",
+      content: "Os 8 encontros foram como um abraço semanal na minha alma. Cada módulo trouxe revelações importantes. Hoje entendo meu corpo, minha mente e meu espírito de uma forma que nunca imaginei ser possível.",
       rating: 5
     },
     {
@@ -51,11 +51,6 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-rose-50 px-4 py-2 rounded-full mb-6">
-            <Star className="w-4 h-4 text-gold-500 fill-gold-500" />
-            <span className="text-sm font-medium text-rose-600">Depoimentos Reais</span>
-          </div>
-          
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-700 mb-6">
             Mulheres que{' '}
             <span className="gradient-text">Transformaram</span>{' '}

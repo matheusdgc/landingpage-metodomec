@@ -34,11 +34,6 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-16 sm:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center space-x-2 bg-sand-50/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md mb-6">
-              <Sparkles className="w-4 h-4 text-gold-400" />
-              <span className="text-sm font-medium text-taupe-600">12 Encontros Ao Vivo</span>
-            </div>
-
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-600 leading-tight mb-6">
               Desperte a{' '}
               <span className="gradient-text">Mulher Plena</span>{' '}
@@ -119,7 +114,7 @@ const Hero = () => {
                     <Heart className="w-6 h-6 text-rose-400" />
                   </div>
                   <div>
-                    <p className="font-semibold text-brown-600">12 Encontros</p>
+                    <p className="font-semibold text-brown-600">8 Encontros</p>
                     <p className="text-sm text-taupe-500">Ao Vivo</p>
                   </div>
                 </div>

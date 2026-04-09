@@ -46,11 +46,6 @@ const About = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="inline-flex items-center space-x-2 bg-rose-50 px-4 py-2 rounded-full mb-6">
-              <Heart className="w-4 h-4 text-rose-500" />
-              <span className="text-sm font-medium text-rose-600">Sua Mentora</span>
-            </div>
-
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-700 mb-6">
               Dra. Andreia{' '}
               <span className="gradient-text">Polo Luquete</span>
@@ -62,8 +57,7 @@ const About = () => {
             </p>
 
             <p className="text-lg text-taupe-600 mb-8 leading-relaxed font-body">
-              O Método MEC surgiu ao perceber que muitas mulheres adoecem quando se afastam da própria essência.
-              Meu propósito é conduzi-las de volta a si mesmas, resgatando a essência feminina como caminho para uma vida mais consciente, equilibrada e saudável.
+              Com mais de 21 anos de medicina, criei o Método MEC ao ver mulheres buscando curas superficiais. A saúde integral surge de <strong>renovar a mente</strong>, resgatar a <strong>essência interior</strong> e adotar hábitos sustentáveis. Nós somos <strong>Mente, Espírito e Corpo</strong> - e o equilíbrio entre eles é essencial.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

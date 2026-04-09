@@ -1,10 +1,10 @@
-import { Video, Users, Calendar, Clock, BookOpen, Award } from 'lucide-react'
+import { Video, Users, Calendar, Clock, BookOpen } from 'lucide-react'
 
 const Method = () => {
   const features = [
     {
       icon: <Video className="w-6 h-6" />,
-      title: "12 Encontros ao Vivo",
+      title: "8 Encontros ao Vivo",
       description: "Conexão real e acompanhamento direto com a Dra. Andreia"
     },
     {
@@ -14,8 +14,8 @@ const Method = () => {
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Grupo Exclusivo",
-      description: "Comunidade de mulheres em jornada de transformação"
+      title: "Ambiente Exclusivo",
+      description: "Um ambiente de mulheres construindo saúde"
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -27,11 +27,6 @@ const Method = () => {
       title: "Material de Apoio",
       description: "Conteúdo complementar para aprofundar seu aprendizado"
     },
-    {
-      icon: <Award className="w-6 h-6" />,
-      title: "Certificado de Conclusão",
-      description: "Reconhecimento pela sua jornada de transformação"
-    }
   ]
 
   const modules = [
@@ -50,7 +45,7 @@ const Method = () => {
             <span className="gradient-text">Método MEC</span>
           </h2>
           <p className="text-lg text-taupe-600 max-w-3xl mx-auto font-body">
-            Uma jornada estruturada em 12 encontros ao vivo para você aprender a se reconectar com sua 
+            Uma jornada estruturada em 8 encontros ao vivo para você aprender a se reconectar com sua
             essência e transformar sua vida de dentro para fora.
           </p>
         </div>

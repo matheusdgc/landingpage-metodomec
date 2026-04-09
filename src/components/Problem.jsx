@@ -24,11 +24,6 @@ const Problem = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-rose-100 px-4 py-2 rounded-full mb-6">
-            <AlertCircle className="w-4 h-4 text-rose-500" />
-            <span className="text-sm font-medium text-rose-600">Você se identifica?</span>
-          </div>
-          
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-600 mb-6">
             O Mundo Moderno Roubou Sua{' '}
             <span className="text-rose-400">Essência Feminina</span>

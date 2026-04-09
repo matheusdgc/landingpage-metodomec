@@ -35,20 +35,14 @@ const Solution = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <div className="inline-flex items-center space-x-2 bg-gold-100 px-4 py-2 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-gold-500" />
-              <span className="text-sm font-medium text-gold-600">A Solução</span>
-            </div>
-            
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-600 mb-6">
               Apresentamos o{' '}
               <span className="gradient-text">Método MEC</span>
             </h2>
             
             <p className="text-lg text-taupe-500 mb-8 leading-relaxed font-body">
-              Uma jornada transformadora de 12 encontros ao vivo, onde você será guiada 
-              pela Dra. Andreia Polo Luquete através de um processo profundo de reconexão 
-              com sua <strong className="text-brown-600">Mente, Espírito e Corpo</strong>.
+              Uma jornada transformadora de 8 encontros ao vivo onde você será guiado
+              pela Dra. Andréia Polo Luquete através de um processo profundo de alinhamento de Mente, Espírito e Corpo (MEC). É renovação mental que transforma pensamentos, ações e vida.
             </p>
 
             <div className="space-y-4 mb-8">

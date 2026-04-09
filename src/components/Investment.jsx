@@ -7,11 +7,10 @@ const Investment = () => {
   const handleCheckout = openCheckout
 
   const includes = [
-    "12 encontros ao vivo com a Dra. Andreia",
+    "8 encontros ao vivo com a Dra. Andreia",
     "Acesso às gravações por 1 ano",
     "Grupo exclusivo de alunas",
     "Material de apoio completo",
-    "Certificado de conclusão",
     "Suporte durante toda a jornada"
   ]
 
@@ -25,7 +24,7 @@ const Investment = () => {
           </h2>
 
           <p className="text-lg text-taupe-600 max-w-2xl mx-auto font-body leading-relaxed">
-            Uma jornada de 12 semanas que vale mais do que qualquer presente material.
+            Uma jornada de 8 semanas que vale mais do que qualquer presente material.
             É o cuidado que você merece dar a si mesma.
           </p>
         </div>
@@ -42,7 +41,7 @@ const Investment = () => {
         <div className="bg-sand-50 rounded-3xl shadow-xl overflow-hidden max-w-2xl mx-auto">
           <div className="bg-gradient-to-r from-rose-300 to-rose-400 p-6 text-center">
             <p className="text-sand-50 font-medium mb-1">Método MEC</p>
-            <p className="text-sand-100 text-sm font-body">12 Encontros ao Vivo</p>
+            <p className="text-sand-100 text-sm font-body">8 Encontros ao Vivo</p>
           </div>
 
           <div className="p-8 lg:p-10">
@@ -77,7 +76,7 @@ const Investment = () => {
               <p className="text-sm text-taupe-600 font-body">
                 Menos do que uma consulta médica comum
                 <br />
-                <span className="text-gold-600 font-medium">e você terá 12 encontros de transformação</span>
+                <span className="text-gold-600 font-medium">e você terá 8 encontros de transformação</span>
               </p>
             </div>
 
