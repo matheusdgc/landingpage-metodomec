@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Clock, Bell } from 'lucide-react'
-import { ENROLLMENT_DEADLINE, getWhatsAppUrl, WHATSAPP_WAITLIST_MESSAGE } from '../config'
+import { Clock } from 'lucide-react'
+import { ENROLLMENT_DEADLINE } from '../config'
 
 const calculateTimeLeft = () => {
   const difference = ENROLLMENT_DEADLINE - new Date()
@@ -41,23 +41,7 @@ const CountdownTimer = () => {
   }, [])
 
   if (timeLeft.expired) {
-    return (
-      <div className="flex flex-col items-center space-y-3 text-sand-50">
-        <div className="flex items-center space-x-2">
-          <Clock className="w-4 h-4" />
-          <span className="font-body font-medium text-sm">Inscrições encerradas</span>
-        </div>
-        <a
-          href={getWhatsAppUrl(WHATSAPP_WAITLIST_MESSAGE)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center space-x-2 bg-sand-50/20 hover:bg-sand-50/30 transition-colors rounded-full px-4 py-2 text-sm font-body font-semibold"
-        >
-          <Bell className="w-4 h-4" />
-          <span>Entrar na lista de espera →</span>
-        </a>
-      </div>
-    )
+    return null
   }
 
   return (
