@@ -61,7 +61,7 @@ const Problem = () => {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold-300 rounded-full opacity-10 blur-3xl"></div>
           
           <div className="relative z-10 max-w-4xl mx-auto text-center">
-            <p className="font-serif text-2xl md:text-3xl text-sand-50 leading-relaxed mb-6 italic font-body">
+            <p className="font-serif text-2xl md:text-3xl text-sand-50 leading-relaxed mb-6 italic">
               "Você acorda todos os dias dando conta de tudo, sendo forte para todos... 
               mas quando foi a última vez que você se permitiu ser cuidada?"
             </p>

@@ -1,6 +1,5 @@
-import { Heart, Shield, Clock, Gift, CheckCircle, Users, Sparkles, Star } from 'lucide-react'
+import { Heart, Shield, Clock, Gift, CheckCircle, Star } from 'lucide-react'
 import { Button as MovingBorderButton } from '@/components/ui/moving-border'
-import CountdownTimer from './CountdownTimer'
 import { openCheckout } from '../config'
 
 const Investment = () => {
@@ -27,10 +26,6 @@ const Investment = () => {
             Uma jornada de 8 semanas que vale mais do que qualquer presente material.
             É o cuidado que você merece dar a si mesma.
           </p>
-        </div>
-
-        <div className="bg-gradient-to-r from-rose-400 to-rose-500 rounded-2xl p-5 mb-8 max-w-2xl mx-auto text-center">
-          <CountdownTimer />
         </div>
 
         <div className="bg-sand-50 rounded-3xl shadow-xl overflow-hidden max-w-2xl mx-auto">
