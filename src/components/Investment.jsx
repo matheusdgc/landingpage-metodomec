@@ -9,7 +9,7 @@ const Investment = () => {
   const includes = [
     "8 encontros ao vivo com a Dra. Andreia",
     "Acesso às gravações por 1 ano",
-    "Grupo exclusivo de alunas",
+    "Ambiente exclusivo de alunas",
     "Material de apoio completo",
     "Suporte durante toda a jornada"
   ]
@@ -30,11 +30,6 @@ const Investment = () => {
         </div>
 
         <div className="bg-gradient-to-r from-rose-400 to-rose-500 rounded-2xl p-5 mb-8 max-w-2xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 text-sand-50 mb-4">
-            <Sparkles className="w-5 h-5" />
-            <span className="font-body font-medium">Vagas limitadas para a próxima turma</span>
-            <Sparkles className="w-5 h-5" />
-          </div>
           <CountdownTimer />
         </div>
 
@@ -126,10 +121,6 @@ const Investment = () => {
         </div>
 
         <div className="mt-12 text-center max-w-2xl mx-auto space-y-6">
-          <div className="flex items-center justify-center space-x-2 text-rose-500">
-            <Users className="w-5 h-5" />
-            <span className="font-body font-medium">Turmas reduzidas para maior acompanhamento</span>
-          </div>
 
           <p className="text-taupe-500 italic font-body leading-relaxed">
             "Você não está gastando, está investindo no bem mais precioso que existe: você mesma.

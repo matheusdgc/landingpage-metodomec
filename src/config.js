@@ -1,7 +1,7 @@
 
-export const CHECKOUT_URL = 'https://pay.cakto.com.br/awmzuem_786964'
+export const CHECKOUT_URL = 'https://payfast.greenn.com.br/h459jh2'
 
-export const WHATSAPP_NUMBER = '5515991222175'
+export const WHATSAPP_NUMBER = '5515998346269'
 export const WHATSAPP_MESSAGE = 'Olá! Tenho interesse no Método MEC e gostaria de saber mais informações. 💫'
 export const WHATSAPP_WAITLIST_MESSAGE = 'Olá! Gostaria de entrar na lista de espera do Método MEC para a próxima turma. 💫'
 

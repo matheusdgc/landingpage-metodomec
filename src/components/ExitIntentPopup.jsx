@@ -163,7 +163,7 @@ const ExitIntentPopup = ({ onCheckout }) => {
           </p>
 
           <div className="bg-rose-50 border border-rose-200 rounded-2xl p-4 mb-6">
-            <p className="text-taupe-500 text-sm font-body mb-1">Investimento especial — vagas limitadas</p>
+            <p className="text-taupe-500 text-sm font-body mb-1">Investimento especial</p>
             <div className="flex items-center justify-center space-x-3">
               <span className="text-taupe-400 line-through font-body">R$1.997</span>
               <span className="bg-rose-200 text-rose-700 text-xs font-bold px-2 py-0.5 rounded-full">-75% OFF</span>

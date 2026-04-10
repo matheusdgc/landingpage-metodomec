@@ -57,7 +57,7 @@ const About = () => {
             </p>
 
             <p className="text-lg text-taupe-600 mb-8 leading-relaxed font-body">
-              Com mais de 21 anos de medicina, criei o Método MEC ao ver mulheres buscando curas superficiais. A saúde integral surge de <strong>renovar a mente</strong>, resgatar a <strong>essência interior</strong> e adotar hábitos sustentáveis. Nós somos <strong>Mente, Espírito e Corpo</strong> - e o equilíbrio entre eles é essencial.
+               Criei o Método MEC ao ver mulheres buscando curas superficiais. A saúde integral surge de <strong>renovar a mente</strong>, resgatar a <strong>essência interior</strong> e adotar hábitos sustentáveis. Nós somos <strong>Mente, Espírito e Corpo</strong> - e o equilíbrio entre eles é essencial.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

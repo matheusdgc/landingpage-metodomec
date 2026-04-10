@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "Como funcionam os encontros ao vivo?",
-      answer: "São encontros mensais ao vivo, realizados via plataforma de videoconferência ao longo do ano. Cada encontro tem duração de aproximadamente 1h30 a 2h, onde a Dra. Andreia apresenta o conteúdo e interage diretamente com as participantes. Você poderá fazer perguntas em tempo real e compartilhar suas experiências."
+      answer: "São encontros semanais ao vivo, realizados via plataforma de videoconferência. Cada encontro tem duração de aproximadamente 1 hora, onde a Dra. Andreia apresenta o conteúdo e interage diretamente com as participantes. Você poderá fazer perguntas em tempo real e compartilhar suas experiências."
     },
     {
       question: "E se eu não puder participar de algum encontro ao vivo?",

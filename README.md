@@ -69,37 +69,3 @@ npm run dev
 ```
 
 O servidor de desenvolvimento estará disponível em `http://localhost:5173`.
-
----
-
-## Build para producao
-
-```bash
-npm run build
-```
-
-Os arquivos gerados ficam na pasta `dist/`.
-
----
-
-## Imagens necessarias
-
-Todas as imagens devem estar em `public/images/`:
-
-| Arquivo | Uso |
-|---|---|
-| `header-logo-mec.png` | Logo no header |
-| `logo-mec-v2.png` | Logo no footer |
-| `profile1.jpeg` | Foto da Dra. Andreia (Hero) |
-| `profile2.jpeg` | Foto da Dra. Andreia (About) |
-| `banner2-metodomec.png` | Imagem de compartilhamento (OG/WhatsApp) |
-| `banner-metodomec.png` | Banner complementar |
-| `favicon.png` | Favicon (raiz de `public/`) |
-
----
-
-## Notas de manutencao
-
-- O `ExitIntentPopup` dispara uma vez por sessao (via `sessionStorage`). Em desktop, ativa quando o mouse sai pelo topo da janela; em mobile, quando o usuario faz um scroll rapido para cima.
-- O `CountdownTimer` exibe automaticamente um link de lista de espera via WhatsApp apos o prazo definido em `ENROLLMENT_DEADLINE`.
-- O Schema.org JSON-LD em `index.html` nao possui `validThrough` — para marcar uma nova oferta com prazo, adicione o campo `"validThrough": "YYYY-MM-DD"` dentro de `offers`.
