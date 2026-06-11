@@ -20,8 +20,8 @@ const Footer = () => {
               </LogoWithParticles>
             </div>
             <p className="text-sand-300 mb-6 max-w-md leading-relaxed font-body">
-              Uma jornada de transformação para mulheres que desejam reconectar sua
-              Mente, Espírito e Corpo, resgatando sua essência feminina.
+              Uma jornada de transformação para mulheres que desejam vencer a exaustão,
+              recuperar a energia e construir saúde alinhando Mente, Espírito e Corpo.
             </p>
             <div className="flex items-center justify-center md:justify-start space-x-4">
               <a

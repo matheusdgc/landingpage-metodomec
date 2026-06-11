@@ -13,7 +13,7 @@ const Testimonials = () => {
       name: "Carolina M.",
       age: 42,
       role: "Advogada",
-      content: "Depois de 15 anos de casamento, eu havia perdido totalmente minha identidade. Me sentia invisível. O MEC me devolveu minha essência feminina. Meu relacionamento melhorou, mas o mais importante: eu me reencontrei.",
+      content: "Depois de 15 anos de casamento, eu havia perdido totalmente minha identidade. Vivia exausta e ansiosa. O MEC me ajudou a recuperar a energia e a autoestima. Meu relacionamento melhorou, mas o mais importante: eu me reencontrei.",
       rating: 5
     },
     {

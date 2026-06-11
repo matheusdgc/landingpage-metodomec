@@ -35,23 +35,23 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-600 leading-tight mb-6">
-              Desperte a{' '}
-              <span className="gradient-text">Mulher Plena</span>{' '}
-              que Existe em Você
+              Você está cansada de{' '}
+              <span className="gradient-text">viver cansada?</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-taupe-600 mb-4 leading-relaxed font-body">
-              <strong className="text-brown-600">Método MEC</strong> — Mente, Espírito, e Corpo
+              Recupere sua energia, fortaleça sua mente, renove seu espírito e construa
+              hábitos que transformam sua saúde de dentro para fora.
             </p>
 
             <p className="text-base sm:text-lg text-taupe-500 mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0 font-body">
-              Transforme sua vida através de uma jornada de autoconhecimento e reconexão
-              com sua essência feminina. Permita-se ser cuidada, acolhida e guiada pela
-              Dra. Andreia Polo Luquete.
+              O <strong className="text-brown-600">Método MEC</strong> é uma jornada de 8 semanas
+              para mulheres que desejam vencer a exaustão, reduzir a ansiedade, recuperar a
+              autoestima e construir uma vida mais saudável — guiada pela Dra. Andreia Polo Luquete.
             </p>
 
             <p className="text-2xl sm:text-3xl font-display font-bold mb-8 gradient-text">
-              Seja poderosa de verdade.
+              Saúde não começa no prato. Começa na mente.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
@@ -63,7 +63,7 @@ const Hero = () => {
                 duration={3000}
               >
                 <Heart className="w-5 h-5" />
-                <span>Quero Transformar Minha Vida</span>
+                <span>Quero recuperar minha energia</span>
               </MovingBorderButton>
               <a
                 href="#metodo"
@@ -90,7 +90,7 @@ const Hero = () => {
                 <svg className="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span>Encontros ao Vivo</span>
+                <span>Jornada de 8 Semanas</span>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Hero = () => {
                     <Heart className="w-6 h-6 text-rose-400" />
                   </div>
                   <div>
-                    <p className="font-semibold text-brown-600">8 Encontros</p>
+                    <p className="font-semibold text-brown-600">8 Semanas</p>
                     <p className="text-sm text-taupe-500">Ao Vivo</p>
                   </div>
                 </div>

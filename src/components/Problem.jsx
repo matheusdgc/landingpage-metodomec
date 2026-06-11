@@ -4,18 +4,18 @@ const Problem = () => {
   const problems = [
     {
       icon: <Weight className="w-8 h-8" />,
-      title: "A Mulher que Carrega Tudo",
-      description: "Assume tudo sozinha, vive sobrecarregada, autocobrança constante e não se permite descansar."
+      title: "A Exaustão que Não Passa",
+      description: "Você acorda cansada, vive sobrecarregada e dorme mal. Mesmo descansando, parece que a energia nunca volta."
     },
     {
       icon: <Frown className="w-8 h-8" />,
-      title: "A Mulher que Se Deixou para Depois",
-      description: "Não consegue manter o autocuidado, muitas vezes até sabe o que precisa fazer, mas não consegue manter constância."
+      title: "A Mente em Alerta Constante",
+      description: "Ansiedade, pensamentos acelerados e a sensação de que sabe o que precisa fazer — mas não consegue manter a constância."
     },
     {
       icon: <HeartCrack className="w-8 h-8" />,
-      title: "A Mulher Desgastada nos Relacionamentos",
-      description: "Dificuldade na comunicação e desgaste no relacionamento conjugal e com os filhos."
+      title: "A Mulher que Se Deixou por Último",
+      description: "Coloca todos à frente de si mesma, perdeu a autoestima e ainda sente culpa quando tenta cuidar de você."
     }
   ]
 
@@ -25,13 +25,13 @@ const Problem = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-600 mb-6">
-            O Mundo Moderno Roubou Sua{' '}
-            <span className="text-rose-400">Essência Feminina</span>
+            Talvez você esteja{' '}
+            <span className="text-rose-400">vivendo assim...</span>
           </h2>
-          
+
           <p className="text-lg text-taupe-500 max-w-3xl mx-auto font-body">
-            Vivemos em uma sociedade que nos ensinou a ser independentes a todo custo, 
-            mas esqueceu de nos ensinar a arte de receber, de se permitir, de ser cuidada.
+            Tem dificuldade para perder peso, sofre com ansiedade, dorme mal e não consegue
+            manter hábitos. E, no fim do dia, acha que o problema é falta de força de vontade.
           </p>
         </div>
 
@@ -62,14 +62,18 @@ const Problem = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <p className="font-serif text-2xl md:text-3xl text-sand-50 leading-relaxed mb-6 italic">
-              "Você acorda todos os dias dando conta de tudo, sendo forte para todos... 
-              mas quando foi a última vez que você se permitiu ser cuidada?"
+              O problema não é falta de força de vontade — e não está apenas no seu corpo.
+            </p>
+            <p className="text-rose-100 font-body leading-relaxed mb-6 max-w-2xl mx-auto">
+              Você já tentou dietas, recomeços e estratégias diversas, mas continua voltando
+              aos mesmos comportamentos. Porque ninguém te ensinou a transformar a mente que
+              governa as suas escolhas.
             </p>
             <p className="text-xl md:text-2xl font-display font-bold text-gold-300 mb-3">
-              Seja poderosa de verdade.
+              Quando a mente muda, os hábitos mudam.
             </p>
             <p className="text-rose-200 font-medium font-body">
-              Chegou a hora de mudar essa história.
+              E quando os hábitos mudam, o corpo responde.
             </p>
           </div>
         </div>

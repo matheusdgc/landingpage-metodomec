@@ -52,12 +52,18 @@ const About = () => {
             </h2>
 
             <p className="text-lg text-taupe-600 mb-6 leading-relaxed font-body">
-              Sou médica há 21 anos e, ao longo dessa jornada, compreendi que a saúde verdadeira nasce muito além dos sintomas: ela começa na escuta profunda do corpo, da mente e da alma.
-              Depois de um intenso processo de transformação pessoal, escolhi dedicar meu trabalho a apoiar mulheres a retomarem uma vida mais plena, reconectadas com quem realmente são.
+              Sou filha de agricultores, médica há 21 anos, esposa e mãe. Antes de ajudar
+              outras mulheres, eu também vivi o cansaço que não passa, a sobrecarga e a culpa
+              de deixar a mim mesma sempre por último. Entendo de perto essa exaustão — porque
+              eu também precisei vencê-la.
             </p>
 
             <p className="text-lg text-taupe-600 mb-8 leading-relaxed font-body">
-               Criei o Método MEC ao ver mulheres buscando curas superficiais. A saúde integral surge de <strong>renovar a mente</strong>, resgatar a <strong>essência interior</strong> e adotar hábitos sustentáveis. Nós somos <strong>Mente, Espírito e Corpo</strong> - e o equilíbrio entre eles é essencial.
+              Foi assim que criei o Método MEC. Descobri que a saúde verdadeira não começa no
+              prato: começa quando a mente é <strong>renovada pela Palavra de Deus</strong>,
+              o espírito é fortalecido e os hábitos do <strong>corpo</strong> passam a sustentar
+              a vida que você deseja viver. Nós somos <strong>Mente, Espírito e Corpo</strong> —
+              e é no equilíbrio entre eles que a transformação acontece.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -94,8 +100,8 @@ const About = () => {
             </div>
 
             <blockquote className="border-l-4 border-gold-400 pl-6 py-2 italic text-taupe-600 font-body mb-8">
-              "Minha missão é guiar mulheres em uma jornada de reconexão, para que possam
-              florescer e viver a vida plena que merecem."
+              "Você não precisa de mais um plano milagroso. Precisa se tornar a mulher capaz
+              de sustentar a saúde que deseja viver — e é nisso que vou te ajudar a alcançar."
             </blockquote>
 
             <a

@@ -3,29 +3,29 @@ import { Sparkles, Brain, Heart, HeartHandshake, Flower2 } from 'lucide-react'
 const Solution = () => {
   const benefits = [
     {
-      icon: <Brain className="w-6 h-6" />,
-      title: "Clareza Mental",
-      description: "Liberte-se dos padrões de pensamento que te aprisionam"
-    },
-        {
-      icon: <Heart className="w-6 h-6" />,
-      title: "Cuidar do corpo",
-      description: "Escolhas diárias que sustentam saúde: movimento, alimentação simples, sono e respeito aos limites."
-    },
-    {
       icon: <Sparkles className="w-6 h-6" />,
-      title: "Conexão Espiritual",
-      description: "Reconecte-se com sua essência e propósito de vida"
+      title: "Mais Energia e Disposição",
+      description: "Saia do ciclo da exaustão e volte a ter pique para a sua própria vida."
     },
     {
-      icon: <HeartHandshake className="w-6 h-6" />,
-      title: "Relacionamentos Saudáveis",
-      description: "Transforme suas relações através da vulnerabilidade consciente"
+      icon: <Brain className="w-6 h-6" />,
+      title: "Menos Ansiedade, Mais Clareza",
+      description: "Acalme a mente em alerta constante e recupere foco e paz no dia a dia."
+    },
+    {
+      icon: <Heart className="w-6 h-6" />,
+      title: "Melhor Sono e Descanso",
+      description: "Durma melhor e acorde de fato descansada, com o corpo respondendo."
     },
     {
       icon: <Flower2 className="w-6 h-6" />,
-      title: "Feminilidade Resgatada",
-      description: "Permita-se florescer e ser a mulher que nasceu para ser"
+      title: "Autoestima Resgatada",
+      description: "Volte a gostar do que vê no espelho e a cuidar de você sem culpa."
+    },
+    {
+      icon: <HeartHandshake className="w-6 h-6" />,
+      title: "Redução de Peso como Consequência",
+      description: "Hábitos sustentáveis e melhor relação com a alimentação — o peso responde naturalmente."
     }
   ]
 
@@ -36,13 +36,19 @@ const Solution = () => {
           {/* Left Content */}
           <div>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-600 mb-6">
-              Apresentamos o{' '}
+              Conheça o{' '}
               <span className="gradient-text">Método MEC</span>
             </h2>
-            
+
+            <p className="text-lg text-taupe-500 mb-4 leading-relaxed font-body">
+              Você não precisa de mais uma dieta. Precisa aprender a governar o seu corpo
+              através de uma mente renovada.
+            </p>
+
             <p className="text-lg text-taupe-500 mb-8 leading-relaxed font-body">
-              Uma jornada transformadora de 8 encontros ao vivo onde você será guiado
-              pela Dra. Andréia Polo Luquete através de um processo profundo de alinhamento de Mente, Espírito e Corpo (MEC). É renovação mental que transforma pensamentos, ações e vida.
+              O Método MEC é uma jornada de 8 semanas em que a Dra. Andreia Polo Luquete
+              guia você pelo alinhamento entre <strong className="text-brown-600">Mente, Espírito e Corpo</strong> —
+              vencendo a exaustão e construindo saúde de dentro para fora.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -83,7 +89,7 @@ const Solution = () => {
                     </div>
                     <div>
                       <h3 className="font-serif text-xl font-semibold text-brown-600">Mente</h3>
-                      <p className="text-taupe-500 text-sm">Clareza e libertação de padrões</p>
+                      <p className="text-taupe-500 text-sm">Transformação de pensamentos, crenças e padrões sabotadores</p>
                     </div>
                   </div>
                 </div>
@@ -96,7 +102,7 @@ const Solution = () => {
                     </div>
                     <div>
                       <h3 className="font-serif text-xl font-semibold text-brown-600">Espírito</h3>
-                      <p className="text-taupe-500 text-sm">Conexão com sua essência</p>
+                      <p className="text-taupe-500 text-sm">Renovação da mente pela Palavra de Deus, identidade e propósito</p>
                     </div>
                   </div>
                 </div>
@@ -109,7 +115,7 @@ const Solution = () => {
                     </div>
                     <div>
                       <h3 className="font-serif text-xl font-semibold text-brown-600">Corpo</h3>
-                      <p className="text-taupe-500 text-sm">Saúde integral e vitalidade</p>
+                      <p className="text-taupe-500 text-sm">Hábitos sustentáveis: alimentação, movimento, descanso e energia</p>
                     </div>
                   </div>
                 </div>

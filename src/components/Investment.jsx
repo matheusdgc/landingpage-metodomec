@@ -6,7 +6,7 @@ const Investment = () => {
   const handleCheckout = openCheckout
 
   const includes = [
-    "8 encontros ao vivo com a Dra. Andreia",
+    "Jornada de 8 semanas com encontros ao vivo",
     "Acesso às gravações por 1 ano",
     "Ambiente exclusivo de alunas",
     "Material de apoio completo",
@@ -23,7 +23,7 @@ const Investment = () => {
           </h2>
 
           <p className="text-lg text-taupe-600 max-w-2xl mx-auto font-body leading-relaxed">
-            Uma jornada de 8 semanas que vale mais do que qualquer presente material.
+            Uma jornada de 8 semanas para vencer a exaustão e construir saúde de verdade.
             É o cuidado que você merece dar a si mesma.
           </p>
         </div>
@@ -123,7 +123,7 @@ const Investment = () => {
           </p>
 
           <p className="text-xl sm:text-2xl md:text-3xl font-display font-bold gradient-text mt-6">
-            Seja poderosa de verdade.
+            Quando a mente muda, o corpo responde.
           </p>
         </div>
       </div>

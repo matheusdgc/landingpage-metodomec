@@ -152,14 +152,14 @@ const ExitIntentPopup = ({ onCheckout }) => {
           </div>
 
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-sand-50 leading-tight">
-            Você merece essa transformação.
+            Cansada de viver cansada?
           </h2>
         </div>
 
         <div className="px-8 py-6 text-center">
           <p className="text-taupe-600 font-body leading-relaxed mb-6">
-            Antes de ir, lembre-se: cada dia que passa é um dia a menos de cuidar de você mesma.
-            O Método MEC está aqui para te guiar.
+            Antes de ir, lembre-se: cada dia que passa é mais um dia vivendo no cansaço.
+            O Método MEC está aqui para te ajudar a recuperar sua energia.
           </p>
 
           <div className="bg-rose-50 border border-rose-200 rounded-2xl p-4 mb-6">
@@ -178,7 +178,7 @@ const ExitIntentPopup = ({ onCheckout }) => {
             className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-sand-50 py-4 rounded-2xl font-bold font-body transition-all hover:shadow-lg hover:shadow-rose-600/40 hover:scale-[1.02] active:scale-[0.98] mb-4"
           >
             <Heart className="w-5 h-5" />
-            <span>Quero Minha Transformação</span>
+            <span>Quero recuperar minha energia</span>
           </button>
 
           <button
