@@ -38,14 +38,14 @@ const Method = () => {
   ]
 
   const journey = [
-    { week: "Semana 1", title: "Entendendo a raiz da exaustão" },
-    { week: "Semana 2", title: "Renovando a mente" },
-    { week: "Semana 3", title: "Quebrando padrões de autossabotagem" },
-    { week: "Semana 4", title: "Alimentação e energia" },
-    { week: "Semana 5", title: "Movimento e saúde" },
-    { week: "Semana 6", title: "Ansiedade e descanso" },
-    { week: "Semana 7", title: "Identidade e autoestima" },
-    { week: "Semana 8", title: "Construindo uma nova versão de você" }
+    { week: "Tema 1", title: "Entendendo a raiz da exaustão" },
+    { week: "Tema 2", title: "Renovando a mente" },
+    { week: "Tema 3", title: "Quebrando padrões de autossabotagem" },
+    { week: "Tema 4", title: "Alimentação e energia" },
+    { week: "Tema 5", title: "Movimento e saúde" },
+    { week: "Tema 6", title: "Ansiedade e descanso" },
+    { week: "Tema 7", title: "Identidade e autoestima" },
+    { week: "Tema 8", title: "Construindo uma nova versão de você" }
   ]
 
   return (
