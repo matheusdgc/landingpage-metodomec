@@ -169,7 +169,7 @@ const ExitIntentPopup = ({ onCheckout }) => {
               <span className="bg-rose-200 text-rose-700 text-xs font-bold px-2 py-0.5 rounded-full">-75% OFF</span>
             </div>
             <p className="font-display text-4xl font-bold text-brown-600 mt-1">R$497</p>
-            <p className="text-taupe-500 text-sm font-body mt-1">ou 12x de R$57</p>
+            <p className="text-taupe-500 text-sm font-body mt-1">ou 12x de R$51,10</p>
           </div>
 
           <button

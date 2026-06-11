@@ -59,7 +59,7 @@ const Investment = () => {
                 <span className="text-taupe-500 text-base sm:text-lg">por apenas</span>
                 <span className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-600">R$497</span>
               </div>
-              <p className="text-taupe-500 mt-2 font-body">ou <strong className="text-brown-600">12x de R$57,78</strong></p>
+              <p className="text-taupe-500 mt-2 font-body">ou <strong className="text-brown-600">12x de R$51,10</strong></p>
             </div>
 
             <div className="bg-gold-50 rounded-xl p-4 mb-8 text-center">

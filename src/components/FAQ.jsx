@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "Posso parcelar o investimento?",
-      answer: "Sim! Você pode optar por pagar à vista por R$497 ou parcelar em até 12x de R$57,78. Trabalhamos com as principais bandeiras de cartão de crédito e também oferecemos opção de PIX para pagamento à vista."
+      answer: "Sim! Você pode optar por pagar à vista por R$497 ou parcelar em até 12x de R$51,10. Trabalhamos com as principais bandeiras de cartão de crédito e também oferecemos opção de PIX para pagamento à vista."
     },
     {
       question: "Como funciona a garantia de 7 dias?",
